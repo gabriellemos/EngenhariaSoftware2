@@ -18,19 +18,35 @@ public class Funcionario {
 	}
 
 	public String getNome() {
-		return nome;
+		return this.nome;
+	}
+	
+	public void setName(String nome) {
+		this.nome = nome;
 	}
 
 	public String getEmail() {
-		return email;
+		return this.email;
+	}
+	
+	public void setEmail(String email) {
+		this.email = email;
 	}
 
 	public String getCargo() {
-		return cargo;
+		return this.cargo;
+	}
+	
+	public void setCargo(String cargo) {
+		this.cargo = cargo;
 	}
 
 	public double getSalario() {
-		return salario;
+		return this.salario;
+	}
+	
+	public void setSalario(double salario) {
+		this.salario = salario;
 	}
 
 }

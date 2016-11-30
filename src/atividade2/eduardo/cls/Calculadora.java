@@ -32,6 +32,7 @@ public class Calculadora {
 				salarioLiquido = f.getSalario() - f.getSalario() * 0.2d;
 			}
 		} else {
+			// Em um sistema real, aqui deveria jogar uma excessão
 			System.out.println("Funcionário não possui um cargo válido");
 		}
 		return salarioLiquido;
