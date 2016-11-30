@@ -1,0 +1,18 @@
+Sistema de geração de nota fiscal a partir de uma fatura.
+
+Fatura contém:
+    |=> nomeCliente;
+    |=> endereço do cliente;
+    |=> tipo do serviço;
+    |=> valor total da fatura.
+
+O gerador de nota fiscal (NF):
+    |=> deve gerar NF contendo os campos: Nome do cliente, valor da NF, valor do imposto a ser pago.
+    |=> o valor da NF é o mesmo da fatura
+    |=> o valor do imposto segue a regra:
+        |=> Tipo do serviço "CONSULTORIA" -> imposto = 25%
+        |=> Tipo do servico "TREINAMENTO" -> imposto = 15%
+        |=> Qualquer outro tipo de serviço -> imposto = 6%
+    |=> ao final da geração da NF deve-se:
+        |=> enviar a NF por email ao SAP;
+        |=> persistir a NF na base de dados.
