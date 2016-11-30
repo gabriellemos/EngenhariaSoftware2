@@ -1,4 +1,4 @@
-package atividade2.eduardo.cls;
+package com.es.cls;
 
 public class Funcionario {
 
@@ -12,6 +12,9 @@ public class Funcionario {
 		this.email = email;
 		this.salario = salario;
 		this.cargo = cargo;
+	}
+
+	public Funcionario() {
 	}
 
 	public String getNome() {
